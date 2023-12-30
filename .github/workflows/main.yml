@@ -28,6 +28,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: docker/flask_league_app/
-          file: ./dockerfile
+          file:  docker/flask_league_app/dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/pythonflask:latest
