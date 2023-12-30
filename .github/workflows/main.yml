@@ -30,4 +30,4 @@ jobs:
           context: docker/flask_league_app/
           file:  docker/flask_league_app/dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/pythonflask:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/pythonflask:${{ github.run_number }}
