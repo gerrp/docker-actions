@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  lolcalculator:
+    image: gerrp/pythonflask:7
+    container_name: lolcalculator-compose
+    ports:
+      - "5000:5000"
